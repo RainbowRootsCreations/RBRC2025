@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Roots Creations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ffdddd, #ffeedb, #ffffcc, #ddffdd, #ddeeff, #e0ddff, #f7ddff);
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 1px 1px gray;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+        .grid-item {
+            padding: 15px;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .grid-item:nth-child(1) {
+            background: #ffcccc;
+        }
+        .grid-item:nth-child(2) {
+            background: #ffebcc;
+        }
+        .grid-item:nth-child(3) {
+            background: #ccffcc;
+        }
+        .grid-item:nth-child(4) {
+            background: #cce5ff;
+        }
+        .cart-button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .grid-item:nth-child(1) .cart-button {
+            background: #ff8888;
+        }
+        .grid-item:nth-child(2) .cart-button {
+            background: #ffbb77;
+        }
+        .grid-item:nth-child(3) .cart-button {
+            background: #77dd77;
+        }
+        .grid-item:nth-child(4) .cart-button {
+            background: #77aaff;
+        }
+        .cart-button:hover {
+            filter: brightness(85%);
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Rainbow Roots Logo" class="logo">
+        Rainbow Roots Creations
+    </header>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="placeholder1.jpg" alt="2025 Logo Tumbler">
+            <h3>2025 Logo Tumbler</h3>
+            <p>Price: $20</p>
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="grid-item">
+            <img src="placeholder2.jpg" alt="2026 Personalized Business Tumbler">
+            <h3>2026 Personalized Business Tumbler</h3>
+            <p>Price: $25</p>
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="grid-item">
+            <img src="placeholder3.jpg" alt="2027 Full Image Tumbler with Pictures and Words">
+            <h3>2027 Full Image Tumbler with Pictures and Words</h3>
+            <p>Price: $35</p>
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="grid-item">
+            <img src="placeholder4.jpg" alt="2028 Tumbler with Extras">
+            <h3>2028 Tumbler with Extras</h3>
+            <p>Price: $40</p>
+            <button class="cart-button">Add to Cart</button>
+        </div>
+    </div>
+    <div class="contact">
+        <p>Contact us: <a href="mailto:rainbowrootscreations@gmail.com">rainbowrootscreations@gmail.com</a></p>
+    </div>
+</body>
+</html>
